@@ -12,3 +12,6 @@
 
 ### brain-gcd
 [Terminal session record](https://asciinema.org/a/525921)
+
+### brain-progression
+[Terminal session record](https://asciinema.org/a/525931)
