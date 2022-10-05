@@ -1,5 +1,4 @@
 import prompt
-import random
 
 
 def welcome_user():
@@ -9,18 +8,18 @@ def welcome_user():
     return name
 
 
-def play(name):
-    print('Answer "yes" if the number is even, otherwise answer "no".')
+def play(game):
+    name = welcome_user()
+
+    print(game.RULE)
 
     correct_count = 0
     while correct_count < 3:
-        number = random.randint(0, 100)
-        print(f'Question: {number}')
-        ans = prompt.string('Your answer: ')
-        if (number % 2 == 0 and ans == 'no') or \
-           (number % 2 == 1 and ans == 'yes'):  # wrong answer is_even?
-            reply = 'yes' if ans == 'no' else 'no'
-            print(f"'{ans}' is wrong answer ;(. Correct answer was '{reply}'.")
+        question, answer = game.generate_qa()
+        print(f'Question: {question}')
+        user_answer = prompt.string('Your answer: ')
+        if user_answer != answer:  # wrong answer
+            print(f"'{user_answer}' is wrong answer ;(. Correct answer was '{answer}'.")
             print(f"Let's try again, {name}!")
             return
         print('Correct!')
