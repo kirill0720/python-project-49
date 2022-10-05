@@ -8,4 +8,4 @@
 [Terminal session record](https://asciinema.org/a/525854)
 
 ### brain-calc
-[Terminal session record](https://asciinema.org/a/525905)
+[Terminal session record](https://asciinema.org/a/525907)
