@@ -9,3 +9,6 @@
 
 ### brain-calc
 [Terminal session record](https://asciinema.org/a/525907)
+
+### brain-gcd
+[Terminal session record](https://asciinema.org/a/525921)
