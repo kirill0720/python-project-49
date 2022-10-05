@@ -15,3 +15,6 @@
 
 ### brain-progression
 [Terminal session record](https://asciinema.org/a/525931)
+
+### brain-prime
+[Terminal session record](https://asciinema.org/a/525934)
