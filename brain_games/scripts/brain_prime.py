@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-import brain_games.games.prime as game
-import brain_games.func
+from brain_games.games.prime import RULE, generate_qa
+import brain_games.engine
 
 
 def main():
-    brain_games.func.play(game)
+    brain_games.engine.play(RULE, generate_qa)
 
 
 if __name__ == '__main__':
