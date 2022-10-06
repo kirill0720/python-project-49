@@ -6,7 +6,10 @@
 - pip версии 19 и выше
 
 ### Инструкции
-- установка `pip install --user dist/*.whl`
+- клонировать `git clone git@github.com:kirill0720/python-project-49.git`
+- перейти в проект `cd python-project-49`
+- собрать и установить пакет `make build && make package-install`
+
 - запуск `brain-calc`
 
 ### Hexlet tests and linter status:
