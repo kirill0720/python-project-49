@@ -1,12 +1,12 @@
-import random
+from random import randint
 import math
 
 RULE = 'Find the greatest common divisor of given numbers.'
 
 
 def generate_qa():
-    int1 = random.randint(0, 100)
-    int2 = random.randint(0, 100)
+    N = 100
+    int1, int2 = randint(0, N), randint(0, N)
 
     question = f'{int1} {int2}'
     answer = math.gcd(int1, int2)
