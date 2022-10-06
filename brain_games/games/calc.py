@@ -1,13 +1,13 @@
-import random
+from random import randint, choice
 
 
 RULE = 'What is the result of the expression?'
 
 
 def generate_qa():
-    int1 = random.randint(0, 100)
-    int2 = random.randint(0, 100)
-    operator = random.choice(['+', '-', '*'])
+    N = 100  # max int for this game
+    int1, int2 = randint(0, N), randint(0, N)
+    operator = choice(['+', '-', '*'])
 
     question = f'{int1} {operator} {int2}'
     if operator == '+':
