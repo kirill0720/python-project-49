@@ -4,7 +4,7 @@ RULE = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def generate_qa():
-    int1 = random.randint(0, 100)
+    int1 = random.randint(2, 100)
     question = str(int1)
 
     for i in range(2, int1):
